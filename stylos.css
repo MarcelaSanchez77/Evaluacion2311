@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #dcd7f8;
+    --color_secundario: #dad0f8;
+     --text-dark: #3f3b57;
+    --text-light: #908ca3;
+    --tamaño_fuente:18px;
+    --maximo_ancho: 1200px;
+    --alto__nav:70px;
+}
+
+::selection {
+    background-color: var(--color_primario);
+    color: var(--color_secundario);
+    background-color: var(--color-tercierio);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--tamaño_fuente);
+    background-color: var(--color_primario);
+    color: var(--color_negro);
+    font-family: "Parkinsans", sans-serif;
+}
+
+header {
+    background-color: var(--color_primario);
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.h-100 {
+    height: calc(100vh - var(--alto__nav))
+}
+
+.contenedor {
+    width: 100%;
+    max-width: var(--maximo_ancho);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__lista {
+    height: var(--alto__nav);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/*-------------------
+---------HOME--------
+-------------------*/
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_secundario);
+    max-width: 100%;
+    height: 68vh;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--text-light);
+    color: var(--color_negro);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: 700;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+}
+
+.titulo1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.parrafo {
+    margin: 20px 0;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--text-light);
+    
+}
+
+.parrafo1 {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--text-dark);
+    
+}
+
+.imgInferiorHeader{
+    z-index: 0;
+    
+    
+    }
+  
+
+.imgSuperiorHeader{
+  z-index: 1;
+  position: absolute;
+  display: block;
+  
+  
+}
+.contenedorInferior{
+    justify-content: left;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.text-center{
+    text-align: center;
+}
+
+
+.cards{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.card__Item{
+    max-width: 350px;
+    width: 30%;
+    text-align: center;
+    color:black;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+
+    
+
+.card__Plan{
+    margin-bottom: 20px;
+
+}
+
+.card__precio{
+    font-size: 3rem;
+
+}
+
+.card__Caracteristica{
+    margin-bottom: 25px;
+
+
+}
+
+/*-------------------
+---------ABOUT--------
+-------------------*/
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portada{
+    order: 1;
+    flex-basis: 80%;
+}
+
+.contenedor-textos{
+    order: 0;
+    flex-basis: 50%;
+}
+    
+
+.titulo{
+    font-size:48px ;
+    font-weight: 700px; ;
+}
+
+.parrafo{
+    margin: 20px 0;
+    font: size 24px;
+    font-weight: 300px; ;
+}
+.primeraImagenAboutUs{
+    height: 500px;
+    width: 450px;
+}
+.segundaImagenAboutUs{
+    height: 500px;
+    width: 450px;
+}
+.terceraImagenAboutUs{
+    height: 500px;
+    width: 450px;
+}
+
+
+.SegundaSeccionAboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_secundario);
+    max-width: 100%;
+    height: 68vh;
+}
+/*Segunda parte del about*/
+
+.cardsImagenes {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    padding: 20px; 
+    background-color: #eeb872; 
+    
+  }
+   
+  .image {
+    flex: 1 1 calc(33.33% - 30px); 
+    max-width: 300px; 
+    
+  }
+  
+  
+  .img {
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    
+  }
+  
+  .card__Imagen{
+    max-width: 350px;
+    width: 30%;
+    text-align: center;
+    color:black;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+.imgProduct{
+    height: 200px;
+    width: 200px;
+
+}
+.cardsIconos{
+    text-align: center;
+    display: flex;
+    gap: 8rem;
+    justify-content: center; 
+
+}
+.imgIcono{
+    border-radius: 100%;
+    background-color: rgb(189, 252, 252);
+    height: 80px;
+    width: 80px;
+        
+}
+
+.cardsTestimonials{
+    text-align: center;
+    display: flex;
+    gap: 4rem;
+    justify-content: center; 
+    background-color: var(--color_secundario)
+}
+
+.imgClient{
+    border-radius: 100%;
+    background-color:var(--color_secundario)
+    height: 80px;
+    width: 80px;
+}
+.card__ItemClient{
+    max-width: 200px;
+    text-align: center;
+    padding: 40px 0;
+    background-color: azure;
+   
+    
+}
+/*Contacts*/
+
+.cardsInstagram{
+    text-align: center;
+    display: flex;   
+    justify-content: center; 
+}
+ 
+
+.card__Instagram{
+    max-width: 350px;
+    text-align: center;
+       
+}
+.imgInstagram{
+    height: 300px;
+    width: 300px;
+
+}
+
+.imputs{
+    border-radius:10px ;
+}
